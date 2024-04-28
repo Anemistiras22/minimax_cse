@@ -141,10 +141,10 @@ public class gameCSE {
                 for (int j = 0; j < 3; j++) {
                     if (board[i][j] == EMPTY) {
                         for (char letter : new char[]{'C', 'S', 'E'}) {
-                                board[i][j] = letter;
-                                int score = minimax(board, false);
-                                board[i][j] = EMPTY;
-                                bestScore = Math.max(score, bestScore);
+                            board[i][j] = letter;
+                            int score = minimax(board, false);
+                            board[i][j] = EMPTY;
+                            bestScore = Math.max(score, bestScore);
                         }
                     }
                 }
@@ -156,10 +156,10 @@ public class gameCSE {
                 for (int j = 0; j < 3; j++) {
                     if (board[i][j] == EMPTY) {
                         for (char letter : new char[]{'C', 'S', 'E'}) {
-                                board[i][j] = letter;
-                                int score = minimax(board, true);
-                                board[i][j] = EMPTY;
-                                bestScore = Math.min(score, bestScore);
+                            board[i][j] = letter;
+                            int score = minimax(board, true);
+                            board[i][j] = EMPTY;
+                            bestScore = Math.min(score, bestScore);
                             
                         }
                     }
